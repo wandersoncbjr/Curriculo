@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesbase/style.css" id="tema">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home Study</title>
+</head>
+
+<body>
+    <header class="row justify-content-between align-items-center">
+        <!--div da logo-->
+        <div class="col d-flex justify-content-start">
+            <img class="logo" src="./imagens/HomeS.png">
+        </div>
+        <!--div da barra de pesquisa-->
+        <div class="col d-flex justify-content-center">
+            <div class="divBusca rounded-pill">
+                <input type="text" class="txtBusca" placeholder="O que gostaria de saber..." />
+                <button class="lupa"><img src="imagens/search.svg" class="btnBusca" alt="Buscar" /></button>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-around">
+            <!--div do link para notícias-->
+            <a class="links" href="noticias.html">Notícias</a>
+
+            <!--div para página de login-->
+            <a class="links" href="cadastro-login.html">Entre</a>
+
+            <!--div para troca de tema - TEMPORÁRIO-->
+            <input class="input-check" type="checkbox" id="checkbox">
+            <label class="checkbox" for="checkbox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-circle-half" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                </svg>
+            </label>
+            <!--Hamburguer menu-->
+            <div class="hamburger">
+                <input type="checkbox" id="checkbox-menu">
+
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="row">
+        <!--Coluna de navegação-->
+        <div class="col-3 barra-lateral">
+            <li><a href="/usuario.html">Perfil</a></li>
+            <li><a href="#">Crie seu Cronograma</a></li>
+            <li><a href="#">Grupos</a></li>
+            <li><a href="#">Provas anteriores</a></li>
+            <li><a href="#">Simulados</a></li>
+            <li><a href="#">Gabaritos</a></li>
+            <li><a href="#">Encontre um Professor</a></li>
+        </div>
+        <!--Vídeos do feed-->
+        <div class="feed col-9">
+            <div nome="Portugues">
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s8a6eXncWY8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Exemplo de texto 1</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 35.2rem;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nEImAvz96EI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Exemplo de texto 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3SPus1VEpCI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Exemplo de texto 3</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div nome="Fisica">
+                    <div class="card" style="width: 35.2rem;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3VLPyOLC1nc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 35.2rem;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GYxXCr6HXcw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 35.2rem;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5AEZCsEAopY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+            </div>
+            <div nome="Mathematics">
+                        <div class="card" style="width: 35.2rem;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xpv-SWbDUr8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 35.2rem;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nysu0K-VXR8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 35.2rem;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/myS0xE4XMJc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+            </div>
+            <div nome="Filosofia">
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ydnyMeF1L0Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>    
+
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i3zVNLz3rFE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2PilSKebR9g"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>  
+                    </div>
+                </div>
+            </div>
+            <div nome="Sociologia">
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdIrgqd7keI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T4PU3uLRdSs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hGKAaVoDlSs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div nome="Quimica">
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TW1HTyTissw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div> 
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ahSWE6aE2DM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SbblIkgoaEE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div nome="Geografia">
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WYkUVasw-DY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CpkjTkCFOjQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rdKevGqEmTU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div nome="Historia">
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6NbSXIdObDk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9fx9p-tvD0s"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 35.2rem;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IWNIikxbv_A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer class="d-flex justify-content-around">
+        <div class="rodaPE ">
+            &copy;copyright 2022
+        </div>
+        <div class="rodaPE ">
+            <a href="Erro.html">Desenvolvedores</a>
+        </div>
+        <div class="rodaPE">
+            <a href="Erro.html">Precisa de ajuda?</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

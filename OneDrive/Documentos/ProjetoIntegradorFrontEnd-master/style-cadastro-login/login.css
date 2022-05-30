@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --verde-base: #3DF5A7;
+    --azul-base: #096FE0;
+    --preto-base: #0f0f0f;
+    --branco-base: #f0f0f0;
+    --branco-fundo: #E6E6E6;
+    --preto-fundo: #1B1B1B;
+
+}
+
+body{
+    background-color: #3DF5A7;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.voltar{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+.voltar a{
+    text-decoration: none;
+    color: var(--preto-fundo);
+    transition: 300ms;
+}
+.voltar a:hover{
+    color: var(--azul-base);
+    transition: 300ms;
+}
+
+.logo-fundo{
+    width: 40rem;
+}
+
+.cadastro {
+    background-color: var(--branco-base);
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+
+    border: 1px solid var(--verde-base);
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+
+    margin-top: 2rem;
+}
+.SOCORRO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toptitle{
+    color: var(--verde-base);
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.logo_cadastro svg{
+    fill: var(--preto-base);
+    width: 3rem;
+    height: 1.5rem;
+    margin-bottom: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cadastro_div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.input_cadastro{
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+}
+.logo_cadastro a{
+    text-decoration: none;
+}
+
+
+.button {
+    border: none;
+    color: var(--branco-base);
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--azul-base);
+    border: 2px solid var(--azul-base);
+    border-radius: 20rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: 300ms;
+}
+button:hover{
+    border: 2px solid var(--verde-base);
+    background-color: var(--verde-base);
+    color: var(--azul-base);
+    transition: 300ms;
+}
+
+.link-Cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link-Cadastro a{
+    color: var(--verde-base);
+    font-weight: 700;
+    text-decoration: none;
+}
